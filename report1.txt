@@ -1,0 +1,47 @@
+
+
+Multiple Inheritance:
+   =============
+
+
+Python looks for each attribute in the class's parents as they are listed left to right.
+Python will start by looking at A, and, if A doesn't have the attribute, then it will look at B.
+
+
+in this example:
+ if A doesn't have the attribute, 
+then it will look at B.
+
+
+
+class A :
+    def __init__(self):     
+      print("Hello from A ! ")
+
+
+class B :
+    def __init__(self):     
+      print("Hello from B ! ")
+
+
+
+class C(A,B):
+   def __init__(self): 
+       super(C,self).__init__()
+       print("Hello from C ! ")
+
+
+
+if we run :
+C()
+
+the output :
+Hello from A ! 
+Hello from C ! 
+
+
+
+
+
+
+

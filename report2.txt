@@ -1,0 +1,26 @@
+
+
+
+overloading in python:
+   ==============
+
+
+In Python, overloading is not an applied concept. 
+
+
+class A:
+    def sum(x):
+        print("1")
+    def sum(y,z):    
+        print("2")
+
+
+
+
+
+if we run:
+a=A()
+a.sum(4) >>>>> 2
+a.sum(3,5) >>>>> TypeError: sum() takes 2 positional arguments but 3 were given
+
+
